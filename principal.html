@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Certamen 1</title>
@@ -22,10 +27,10 @@
 - Información de contacto o ubicación del Centro Cultural -->
 
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark py-1 fixed-top">
     <div class="container-fluid">
         <a href="#" class="navbar-brand">
-            <img src="img/Logo puerto abierto.jpg" alt="" width="100" height="100">
+            <img src="img/Logo puerto abierto.jpg" alt="" width="80" height="80">
         </a>
 
         <button 
@@ -49,6 +54,9 @@
     </div>
 </nav>
 
+<!-- Seccion espacio entre navbar -->
+<section class="bg-dark p-5 g-5"></section>
+
 <section class="bg-dark text-light p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
     <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -67,61 +75,46 @@
 </section>
 
 
-<section class="bg-primary text-light p-4">
-    <div class="container-flex px-4">
-        <div class="d-md-flex justify-content-between align-items-center">
-            <div class="h2">
-            <i class="bi bi-phone text-light"></i>
-            </div>
-            <h3 class="mb-3 mb-md-0">Información de contacto: <br> +52 123 123 123</h3>
-            <h3 class="mb-3 mb-md-0">Visita Nuestras Redes Sociales</h3>
-            
-
-
-            <a href="https://twitter.com" class="icon-link">
-                <div class="h1">
-                <i class="bi bi-twitter text-light"></i>
-                </div>
-            </a>
-
-            <a href="https://facebook.com" class="icon-link">
-                <div class="h1">
-                <i class="bi bi-facebook text-light"></i>
-                </div>
-            </a>
-
-            <a href="https://instagram.com" class="icon-link">
-                <div class="h1">
-                <i class="bi bi-instagram text-light"></i>
-                </div>
-            </a>
-
-            <a href="https://tiktok.com" class="icon-link">
-                <div class="h1">
-                <i class="bi bi-tiktok text-light"></i>
-                </div>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-
-
 
 
 
 <section class="py-5">
-    <div class="container">
-        <h2>¿Qué es lo que ofrecemos?</h2>
+    <div class="container align-items-center justify-content-between">
 
-        <p class="text-center">
-        Nuestra programación está diseñada para reflejar el pulso de la ciudad puerto, integrando la tradición marítima con las vanguardias artísticas contemporáneas a través de pilares fundamentales:
-        </p>
+        <h1 class="text-center">Centro Cultural Puerto Abierto</h1>
+        <div class="row p-5">
+            <div class="col justify-content-center">
+                <p class="lead">
+                    Ubicado estratégicamente frente al mar en una antigua bodega portuaria de ladrillo visto y vigas de acero recuperadas, el <strong>Centro Cultural Puerto Abierto</strong> nace como un espacio de encuentro donde la brisa marina dialoga con las artes, el pensamiento crítico y la memoria de la costa. Concebido no solo como un recinto de exhibición, sino como un verdadero muelle de intercambio cultural, nuestro proyecto busca abrir las compuertas de la creatividad hacia la comunidad, convirtiendo el borde costero en un territorio vivo de experimentación y convivencia.
+                </p>
+            </div>
+            <div class="col">
+                <img src="img/centro-cultural-palace.jpg" alt="" class="img-fluid rounded" >
+
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col">
+                <img src="img/museo-cclm.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+            <p class="lead">
+                Nuestro edificio combina la robustez de la arquitectura industrial marítima con la transparencia de grandes ventanales abiertos al horizonte, generando un refugio cálido y luminoso que invita a detenerse, contemplar y crear. Creemos que la cultura es el mejor puerto seguro para navegar los tiempos actuales, un espacio donde todas las voces encuentran calado y rumbo.
+            </p>
+
+            </div>
+        </div>
+
+            <div class="col">
+
+            </div>
+
 
     </div>
 </section>
 
+        <h2 class="text-center">¿Qué es lo que ofrecemos?</h2>
 
 
 
@@ -132,7 +125,7 @@
     <div class="container">
         <h2 id="actividades" class="text-center py-3">Actividades destacadas</h2>
 
-        <div class="row text-center">
+        <div class="row text-center g-4">
             <div class="col-md">
                 <div class="card bg-dark text-light">
                     <div class="card-body text-center">
@@ -214,7 +207,10 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Artes Visuales</h4>
                         <h4>Fecha: 15 de Septiembre, 2026</h4>
                         <p>Introducción práctica al moldeado en arcilla y técnicas experimentales de esmaltado a mano.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
             </div>
@@ -227,7 +223,9 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Danza</h4>
                         <h4>Fecha: 22 de Septiembre, 2026</h4>
                         <p>Sesión abierta de expresión corporal enfocada en la liberación del estrés a través del movimiento libre.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
 
@@ -244,7 +242,10 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Música</h4>
                         <h4>Fecha: 18 de Septiembre, 2026</h4>
                         <p>Concierto al aire libre en el patio central con destacados exponentes de la escena jazzística nacional.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
             </div>
@@ -257,7 +258,9 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Literatura</h4>
                         <h4>Fecha: 25 de Septiembre, 2026</h4>
                         <p>Encuentro de escritura creativa orientado a la exploración de la narrativa breve y la poesía urbana.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
 
@@ -288,7 +291,9 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Fotografía</h4>
                         <h4>Fecha: 14 de Octubre, 2026</h4>
                         <p>Curso intensivo teórico-práctico sobre el manejo de cámaras mecánicas de 35mm y cuarto oscuro.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
 
@@ -305,7 +310,9 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Gastronomía</h4>
                         <h4>Fecha: 26 de Septiembre, 2026</h4>
                         <p>Taller práctico de cocina tradicional chilota y uso de ingredientes endémicos de la zona austral.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
             </div>
@@ -318,7 +325,9 @@ Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coheren
                         <h4>Categoría: Recorrido</h4>
                         <h4>Fecha: 8 de Octubre, 2026</h4>
                         <p>Safari fotográfico por los mercados tradicionales y picadas históricas del centro de Santiago.</p>
-                        <a href="" class="button btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="bi bi-chevron-right"></i> Ver más
+                        </a>
                     </div>
                 </div>
 
@@ -407,6 +416,59 @@ cuando corresponda. -->
 </div>
 
 
+
+<section class="bg-primary text-light py-5 px-3">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+            
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-start">
+                <div class="h2 me-3 mb-0">
+                    <i class="bi bi-phone text-light"></i>
+                </div>
+                <h3 class="mb-0 fs-4">
+                    <span class="fw-bold">+52 123 123 123</span>
+                </h3>
+                <br>
+                <h3 class="mb-0 fs-4">
+                    
+
+                    <span class="fw-bold">Teniente Merino 1050, Puerto Aysén.</span>
+                </h3>
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-end gap-3">
+                <h3 class="mb-0 fs-5 text-center text-lg-start">Visita Nuestras Redes Sociales</h3>
+                
+                <div class="d-flex gap-3">
+                    <a href="https://twitter.com" class="icon-link text-decoration-none" aria-label="Twitter">
+                        <div class="h3 mb-0">
+                            <i class="bi bi-twitter text-light"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://facebook.com" class="icon-link text-decoration-none" aria-label="Facebook">
+                        <div class="h3 mb-0">
+                            <i class="bi bi-facebook text-light"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com" class="icon-link text-decoration-none" aria-label="Instagram">
+                        <div class="h3 mb-0">
+                            <i class="bi bi-instagram text-light"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://tiktok.com" class="icon-link text-decoration-none" aria-label="TikTok">
+                        <div class="h3 mb-0">
+                            <i class="bi bi-tiktok text-light"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 
