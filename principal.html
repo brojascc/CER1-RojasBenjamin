@@ -5,124 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Centro Cultural Puerto Abierto</title>
 
 </head>
 <body>
 
-<!-- página principal -->
-<!-- Debe presentar información general sobre el Centro Cultural Puerto Abierto y su propósito. La página deberá incluir:
-- Identificación del Centro Cultural
-- Breve descripción de la organización
-- Una sección de bienvenida visualmente destacada
-- Una selección de actividades destacadas
-- Al menos una llamada a la acción que permita acceder a la cartelera de actividades
-- Información de contacto o ubicación del Centro Cultural -->
 
+<nav class="navbar navbar-expand-md bg-dark navbar-dark py-2 fixed-top">
+    <div class="container-fluid align-items-center">
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark py-1 fixed-top">
-    <div class="container-fluid">
-        <a href="principal.html" class="navbar-brand">
-            <img src="img/Logo puerto abierto.jpg" alt="" width="80" height="80">
+        <a href="principal.html" class="navbar-brand align-items-center m-2 ">
+            <img src="img/puerto.png" class="logo"> 
+
+            <span class="fs-5 fs-md-4 fw-bold text-start lh-1" style="color: #A8E600;">
+                PUERTO ABIERTO
+            </span>
         </a>
 
-        <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
+        <div class="vr d-none d-md-block mx-3 text-white opacity-50 align-self-center" style="height: 24px;"></div>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-right">
+            <ul class="navbar-nav align-items-md-center pt-4 pt-md-0 ">
                 <li class="nav-item">
-                    <a href="cartelera.html" class="nav-link">Cartelera de Actividades</a>
+                    <a href="cartelera.html" class="nav-link">Actividades</a>
                 </li>
                 <li class="nav-item">
                     <a href="inscripcion.html" class="nav-link">Inscripciones</a>
                 </li>
             </ul>
         </div>
+
     </div>
 </nav>
 
 <!-- Seccion espacio entre navbar -->
 <section class="bg-dark p-5 g-5"></section>
 
-
-
-<section>
+<header>
     <div class="card border-0 rounded-0 overflow-hidden text-dark position-relative">
-        <img src="img/puerto_aysen.jpg" class="card-img rounded-0 object-fit-cover vh-60" height="400px" ">
+        <img src="img/puerto_aysen.jpg" class="card-img rounded-0 object-fit-cover vh-60" height="600px" >
 
         <div class="card-img-overlay d-flex align-items-end p-4">
-            <div class="bg-white p-4 shadow-sm col-12 col-md-5 col-lg-5 text-center">
+            <div class="bg-white p-4 col-12 col-md-5 col-lg-6 text-center">
                 <h1>Bienvenido al Centro Cultural Puerto Abierto</h1>
                 <div class="bg-black mx-auto" style="width: 60px; height: 4px; border-radius: 2px;"></div>
-                <p class="lead my-3">
-                <b>PUERTO ABIERTO</b> se dedica a crear actividades recreativas y culturales re-descubriendo la importancia de espacios públicos de calidad.
+                <p class="my-3 fs-3">
+                PUERTO ABIERTO se dedica a crear actividades recreativas y culturales re-descubriendo la importancia de espacios públicos de calidad.
                 </p>
-                <button class="btn btn-primary btn-lg center">Inscribete Ahora!</button>
-
+                <button class="btn btn-primary btn-lg center fs-3">Inscribete Ahora!</button>
             </div>
         </div>
     </div>
-</section>
+</header>
 
 
-
+<!-- Centro cultural -->
 <section class="py-5">
-    <div class="container align-items-center justify-content-between">
+    <div class="container">
 
-        <h1 class="text-center">Centro Cultural Puerto Abierto</h1>
-        <div class="row p-5">
-            <div class="col justify-content-center">
-                <p class="lead">
+        <h1 class="text-center fw-bold mb-4 mb-md-5">Centro Cultural Puerto Abierto</h1>
+        
+        <div class="row gy-4 align-items-center mb-5">
+            <div class="col-12 col-lg-6">
+                <p class="lead text-start m-0">
                     Ubicado estratégicamente frente al mar en una antigua bodega portuaria de ladrillo visto y vigas de acero recuperadas, el <strong>Centro Cultural Puerto Abierto</strong> nace como un espacio de encuentro donde la brisa marina dialoga con las artes, el pensamiento crítico y la memoria de la costa. Concebido no solo como un recinto de exhibición, sino como un verdadero muelle de intercambio cultural, nuestro proyecto busca abrir las compuertas de la creatividad hacia la comunidad, convirtiendo el borde costero en un territorio vivo de experimentación y convivencia.
                 </p>
             </div>
-            <div class="col">
-                <img src="img/centro-cultural-palace.jpg" alt="" class="img-fluid rounded" >
-
+            <div class="col-12 col-lg-6">
+                <img src="img/centro-cultural-palace.jpg" class="img-fluid rounded w-100 img-nosotros">
             </div>
         </div>
 
-        <div class="row p-5">
-            <div class="col">
-                <img src="img/museo-cclm.jpg" alt="" class="img-fluid rounded">
+        <div class="row gy-4 align-items-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <img src="img/museo-cclm.jpg" class="img-fluid rounded w-100 img-nosotros">
             </div>
-            <div class="col">
-            <p class="lead">
-                Nuestro edificio combina la robustez de la arquitectura industrial marítima con la transparencia de grandes ventanales abiertos al horizonte, generando un refugio cálido y luminoso que invita a detenerse, contemplar y crear. Creemos que la cultura es el mejor puerto seguro para navegar los tiempos actuales, un espacio donde todas las voces encuentran calado y rumbo.
-            </p>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <p class="lead text-start m-0">
+                    Nuestro edificio combina la robustez de la arquitectura industrial marítima con la transparencia de grandes ventanales abiertos al horizonte, generando un refugio cálido y luminoso que invita a detenerse, contemplar y crear. Creemos que la cultura es el mejor puerto seguro para navegar los tiempos actuales, un espacio donde todas las voces encuentran calado y rumbo.
+                </p>
             </div>
         </div>
 
     </div>
 </section>
 
+
 <section class="py-5 bg-dark text-light">
     <div class="container">
-        <!-- Encabezado de la sección -->
-        <h2 class="text-center fw-bold mb-3 display-6">Nuestas Actividades</h2>
-        <p class="lead text-center text-white-50 mb-5 col-lg-8 mx-auto">
+
+        <h2 class="text-center fw-bold mb-3 display-6">Nuestras Actividades</h2>
+        <p class="lead text-center mb-5 col-lg-8 mx-auto">
             Nuestra programación es permanente, diversa y transversal, pensada para reflejar las múltiples identidades, inquietudes y expresiones del mundo actual. A través de una oferta integral, nos estructuramos en torno a los siguientes pilares:
         </p>
 
-        <!-- Primera Fila (3 Actividades) -->
         <div class="row g-4 mb-4">
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Salas de Exposición</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Contamos con espacios galerísticos de gran formato que albergan exposiciones temporales de artistas nacionales e internacionales de renombre, abarcando desde vanguardias históricas hasta fotografía documental.
                     </p>
                 </div>
@@ -131,7 +124,7 @@
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Cineteca Nacional</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Dedicada a la preservación y difusión del patrimonio audiovisual. Ofrecemos funciones diarias de cine independiente, ciclos temáticos, estrenos nacionales y muestras internacionales.
                     </p>
                 </div>
@@ -140,19 +133,18 @@
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Programas Públicos</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Diseñamos experiencias de aprendizaje significativas para todo tipo de públicos. Incluye visitas guiadas mediadas, recorridos patrimoniales y conversatorios abiertos con creadores.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Segunda Fila (3 Actividades) -->
         <div class="row g-4">
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Talleres de Creación</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Un espacio activo de formación artística y oficios. Impartimos cursos prácticos y seminarios en artes visuales, fotografía analógica, literatura, danza y teatro contemporáneo.
                     </p>
                 </div>
@@ -161,7 +153,7 @@
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Gastronomía e Identidad</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Promovemos la valorización del patrimonio culinario mediante talleres de cocina ancestral, seminarios de gastronomía sustentable, rutas temáticas y degustaciones de productos locales.
                     </p>
                 </div>
@@ -170,7 +162,7 @@
             <div class="col-12 col-md-4">
                 <div class="p-4 bg-secondary bg-opacity-10 rounded-3 h-100 border border-secondary border-opacity-25">
                     <h5 class="fw-bold text-white mb-2">Ediciones Independientes</h5>
-                    <p class="text-white-50 small mb-0">
+                    <p class="small mb-0">
                         Plataformas de visibilización y comercialización para creadores gráficos, editoriales independientes, artesanos y colectivos culturales, impulsando la economía creativa local.
                     </p>
                 </div>
@@ -180,22 +172,21 @@
 </section>
 
 <section class="p-5">
-
     <div class="container">
         <h2 id="actividades" class="text-center py-3">Actividades destacadas</h2>
 
         <div class="row text-center g-4">
             <div class="col-md">
-                <div class="card bg-dark text-light">
+                <div class="card bg-dark text-light h-100">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
                         <i class="bi bi-person-walking"></i>
                         </div>
-                        <h3 class="card-title mb-3">
+                        <h2 class="card-title mb-3">
                             Recorridos
-                        </h3>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo eveniet voluptate tenetur facilis itaque.
+                        </h2>
+                        <p class="card-text fs-5">
+                            Explora la memoria viva de nuestra costa a través de caminatas guiadas por antiguos barrios portuarios, mercados tradicionales y rincones icónicos. Un viaje a pie para redescubrir el patrimonio arquitectónico y humano que da vida a nuestro entorno.
                         </p>
                         <a href="" class="btn btn-primary">Descubrir</a>
                     </div>
@@ -203,16 +194,16 @@
             </div>
 
             <div class="col-md">
-                <div class="card bg-secondary text-light">
+                <div class="card bg-secondary text-light h-100">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
                         <i class="bi bi-fork-knife"></i>
                         </div>
-                        <h3 class="card-title mb-3">
+                        <h2 class="card-title mb-3">
                             Ofertas Gastronómicas
-                        </h3>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo eveniet voluptate tenetur facilis itaque.
+                        </h2>
+                        <p class="card-text fs-5">
+                            Una propuesta culinaria que rinde homenaje a la cocina marina y de estación. Encuentra desde degustaciones artesanales y cocina de autor hasta talleres gastronómicos que rescatan recetas ancestrales y productos locales de la zona.
                         </p>
                         <a href="" class="btn btn-primary">Descubrir</a>
                     </div>
@@ -221,16 +212,16 @@
             
             </div>
             <div class="col-md">
-                <div class="card bg-dark text-light">
+                <div class="card bg-dark text-light h-100">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
                         <i class="bi bi-brush-fill"></i>
                         </div>
-                        <h3 class="card-title mb-3">
+                        <h2 class="card-title mb-3">
                             Feria de Diseño y Arte
-                        </h3>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo eveniet voluptate tenetur facilis itaque.
+                        </h2>
+                        <p class="card-text fs-5">
+                            Un escaparate abierto para ilustradores, artesanos, diseñadores independientes y creadores locales. Ven a conocer y apoyar el talento regional en una feria llena de objetos únicos, arte gráfico, encuadernación y diseño sustentable.
                         </p>
                         <a href="" class="btn btn-primary">Descubrir</a>
                     </div>
@@ -242,79 +233,47 @@
 </section>
 
 
-
-
-
-<!-- 1.2. Cartelera de Actividades
-Debe presentar las actividades ofrecidas por el Centro Cultural utilizando una galería construida mediante el sistema
-de grilla y componentes de Bootstrap. Se deberán presentar al menos seis actividades. Cada actividad deberá incluir
-como mínimo: imagen, nombre de la actividad, categoría, fecha, breve descripción.
-La cartelera deberá presentar una distribución que se adapte adecuadamente a diferentes tamaños de pantalla.
-Las actividades y sus contenidos pueden ser ficticios, pero deberán ser coherentes con el contexto planteado. -->
-
+<!-- Cartelera -->
 <section class="py-5 bg-dark text-light">
-
     <div class="container align-items-center">
-
-    <h2 class="border-bottom border-white border-2 pb-2 mb-4 text-center">
-        Cartelera de Actividades
-    </h2>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo dignissimos, veniam illum labore veritatis ratione voluptatibus enim similique magni! Dicta illo, voluptatem sed atque dolor ipsa distinctio quasi laborum!
-    Temporibus incidunt itaque sapiente voluptate eius ipsam delectus animi, ducimus minus dolore nulla est dolores modi iure, numquam laboriosam molestiae, placeat consequatur minima odit dicta? Voluptas, omnis autem. Perferendis, sed.</p>
-    <a href="cartelera.html" class="btn btn-primary">Visita Nuestra Cartelera</a>
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Cartelera de Actividades</h1>
+            <p class="fs-3">
+                Explora nuestra programación completa de talleres, conciertos, exposiciones y ciclos de cine al aire libre. Hay una experiencia esperando por ti frente al mar.
+            </p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="cartelera.html" role="button">Ver más</a>
+            </p>
+        </div>
 
     </div>
 </section>
-
-
-<!-- 1.3. Inscripción a Actividades
-Debe incluir un formulario mediante el cual una persona pueda registrar su interés en participar de una actividad.
-El formulario deberá solicitar:
-- Nombre completo
-- Correo electrónico
-- Teléfono
-- Actividad de interés (Lista de actividades publicadas)
-- Edad
-- Comentarios adicionales
-- Aceptación de las condiciones de participación 
-
-Definirse como obligatorios con html
--->
-
-<!-- Estructura
-header, nav, main, section, footer u otros elementos HTML
-cuando corresponda. -->
-
 
 
 
 
 <!-- Inscripción -->
-
-
-
-
 <section class="py-5 bg-secondary text-light">
-
     <div class="container align-items-center">
-
-    <h2 class="border-bottom border-white border-2 pb-2 mb-4 text-center">
-        Inscripciones
-    </h2>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo dignissimos, veniam illum labore veritatis ratione voluptatibus enim similique magni! Dicta illo, voluptatem sed atque dolor ipsa distinctio quasi laborum!
-    Temporibus incidunt itaque sapiente voluptate eius ipsam delectus animi, ducimus minus dolore nulla est dolores modi iure, numquam laboriosam molestiae, placeat consequatur minima odit dicta? Voluptas, omnis autem. Perferendis, sed.</p>
-    <a href="inscripcion.html" class="btn btn-primary">Inscribete Ahora!</a>
-
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Inscripciones</h1>
+            <p class="fs-3">
+                Nuestros talleres y encuentros cuentan con cupos limitados para garantizar una experiencia cercana y personalizada. Revisa los requisitos, elige tu actividad favorita y completa el formulario en menos de dos minutos. ¡El arte y la comunidad se construyen entre todos!
+            </p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="inscripcion.html" role="button">Ver más</a>
+            </p>
+        </div>
     </div>
 </section>
 
 
 
 
-
-<section class="bg-dark text-light py-5 px-3">
+<!-- Footer -->
+<footer class="bg-dark text-light py-5 px-3">
     <div class="container">
         <div class="row align-items-center gy-4">
             
@@ -323,7 +282,7 @@ cuando corresponda. -->
                     <i class="bi bi-phone text-light"></i>
                 </div>
                 <h3 class="mb-0 fs-4">
-                    <span class="fw-bold">+52 123 123 123</span>
+                    <span class="fw-bold">+56 1 23 456 789</span>
                 </h3>
                 <br>
                 <h3 class="mb-0 fs-4">
@@ -365,10 +324,9 @@ cuando corresponda. -->
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
-</section>
+</footer>
 
 
 
