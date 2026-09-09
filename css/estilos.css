@@ -57,7 +57,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 .text-warning{
     color: #A8E600 !important;
+}
+
+header{
+    border-style: solid;
+    border-color: #051C33;
+    border-width: 10px;
+    border-bottom-width: 0px;
 }
