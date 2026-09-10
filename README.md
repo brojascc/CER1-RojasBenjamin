@@ -1,6 +1,24 @@
-# Certamen-1
 
+# Certamen 1 - Centro Cultural Puerto Abierto
+
+![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Puerto Abierto](img/Puerto%20Abierto.png)
+
+## Estructura del Proyecto
+
+```mermaid
+mindmap
+  root((Puerto-Abierto))
+    css
+      estilos.css
+      bootstrap.css
+    img
+    index.html
+    cartelera.html
+    inscripcion.html
+```
 
 ## Inspirado por:
 - [PuertoAbierto](https://www.facebook.com/PuertoAbierto?locale=es_LA)
@@ -26,3 +44,5 @@
 ### Logo
 - https://www.flaticon.es/icono-gratis/puerto_1183177?term=puerto&related_id=1183177
 
+
+---
